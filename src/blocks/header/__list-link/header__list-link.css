@@ -1,0 +1,13 @@
+.header__list-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #fff;
+    padding: 8px 20px 10px;
+    border: #fff solid 2px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+
+}

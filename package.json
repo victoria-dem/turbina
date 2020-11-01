@@ -1,0 +1,23 @@
+{
+  "name": "turbina",
+  "version": "1.0.0",
+  "description": "turbina",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoria-dem/turbina.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoria-dem/turbina/issues"
+  },
+  "homepage": "https://github.com/victoria-dem/turbina#readme"
+}

@@ -1,3 +1,47 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/__list/header__list.css");
+@import url("../blocks/header/__list-item/header__list-item.css");
+@import url("../blocks/header/__list-link/header__list-link.css");
+
+
+
+
+
+
+
+
+
+
+
+.main-illustration {
+    margin: 0 auto;
+    display: block;
+}
+ .section-main {
+     background-color: #fff;
+     color: #000;
+     margin: 0 10px;
+     border-radius: 10px;
+     padding: 0 55px;
+     font-style: normal;
+ }
+ .content {
+     max-width: 716px;
+ }
+
+ .content__header {
+     padding: 60px 0 44px;
+     font-size: 30px;
+     line-height: 1.2;
+     font-weight: 400;
+ }
+ .content__text {
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 1.21;
+ }
 

@@ -1,0 +1,8 @@
+.page {
+    background-image: url("../../images/colors-blue-green.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Inter', 'Arial', sans-serif;
+}
