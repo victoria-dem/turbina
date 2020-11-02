@@ -8,40 +8,138 @@
 @import url("../blocks/header/__list-link/header__list-link.css");
 
 
-
-
-
-
-
-
-
-
-
 .main-illustration {
     margin: 0 auto;
     display: block;
 }
- .section-main {
-     background-color: #fff;
-     color: #000;
-     margin: 0 10px;
-     border-radius: 10px;
-     padding: 0 55px;
-     font-style: normal;
- }
- .content {
-     max-width: 716px;
- }
 
- .content__header {
-     padding: 60px 0 44px;
-     font-size: 30px;
-     line-height: 1.2;
-     font-weight: 400;
- }
- .content__text {
+.main-content {
+    background-color: #fff;
+    color: #000;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 0 55px;
+    font-style: normal;
+}
+
+.content {
+    max-width: 716px;
+}
+
+.title {
+    padding: 60px 0 44px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.content__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+}
+
+.content__text_list {
+    padding: 0 0 0 30px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+}
+
+.content__text_list-item {
+    list-style-type: '\2014\a0';
+    padding-bottom: 18px;
+}
+
+/*  Форма */
+.poetry-form {
+    padding-bottom: 86px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 600px;
+}
+ .form__text {
      font-weight: 400;
      font-size: 18px;
      line-height: 1.21;
+     color: #000;
+     border: solid 2px #000;
+     border-radius: 30px;
+     margin: 0 0 16px 0;
+     padding: 19px 24px;
  }
+::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+    color: #000;
+}
+.form__radio {
+    /*margin: 35px 0;*/
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.form__radio-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+    cursor: pointer;
+}
 
+.form__radio-img {
+    display: inline-block;
+    vertical-align: middle;
+    width:  27px;
+    height: 27px;
+    margin-right: 14px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.form__radio-img:hover {
+    /*пока нет стилей от дизайнера*/
+}
+
+.form__radio-img:checked {
+/*пока нет стилей от дизайнера*/
+}
+.form__radio-link {
+    color: #000;
+}
+.form__button {
+    margin-top: 88px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 19px 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__copyright {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+    padding: 35px;
+}

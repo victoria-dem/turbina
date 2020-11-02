@@ -37,20 +37,22 @@
       </nav>
     </header>
     <main class="main">
-      <img
-        class="main-illustration"
-        src="./images/turbina.svg"
-        alt="Турбина взорвавшимися буквами"
-      />
-      <section class="audioplayer">
+      <h1>
+        <img
+          class="main-illustration"
+          src="./images/turbina.svg"
+          alt="Турбина"
+        />
+      </h1>
+      <section class="audio-player">
         <audio>
           <source src="./utils/dreaming.mp3" type="audio/mpeg" />
           Ваш браузер не поддерживает HTML5 аудио.
         </audio>
       </section>
-      <section class="section-main">
+      <div class="main-content">
         <article class="content">
-          <h2 class="content__header">О проекте</h2>
+          <h2 class="title">О проекте</h2>
           <p class="content__text">
             Мы знаем, что наши дети постоянно существуют в режиме
             непрекращающегося творческого процесса. Мы видим это, когда ребёнок
@@ -74,7 +76,7 @@
           </p>
         </article>
         <article class="content">
-          <h2 class="content__header">Как это работает</h2>
+          <h2 class="title">Как это работает</h2>
           <p class="content__text">
             Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы
             записали и считаете, что это сильное высказывание. Мы собираем пул
@@ -85,27 +87,91 @@
           </p>
         </article>
         <article class="content">
-          <h2 class="content__header">Тезисы</h2>
-          <ul>
-            <li class="content__text_list">
+          <h2 class="title">Тезисы</h2>
+          <ul class="content__text_list">
+            <li class="content__text_list-item">
               Дети никогда не прекращают творить и круто стараться быть на них
               похожими в этом
             </li>
-            <li class="content__text_list">
+            <li class="content__text_list-item">
               Детское бессознательное помогает родителям понять, что происходит
               внутри семьи
             </li>
-            <li class="content__text_list">
+            <li class="content__text_list-item">
               Не существует детской и взрослой поэзии. Существует мысль и
               чувство, зафиксированное в ней
             </li>
-            <li class="content__text_list">
+            <li class="content__text_list-item">
               Дети получают невероятное удовольствие и мотивацию от того, что их
               творчество востребовано сверстниками и взрослыми.
             </li>
           </ul>
         </article>
-      </section>
+        <section class="poetry-form">
+          <h2 class="title">Форма</h2>
+          <form class="form" name="poetry" novalidate>
+            <input
+              type="text"
+              id="name-input"
+              placeholder="Имя и фамилия автора"
+              class="form__text"
+              name="title"
+              required
+              minlength="2"
+              maxlength="40"
+            />
+            <span class="form__error" id="name-input-error"></span>
+            <input
+              type="text"
+              id="email-input"
+              placeholder="Почта"
+              class="form__text"
+              name="email"
+              required
+              minlength="2"
+              maxlength="200"
+            />
+            <span class="form__error" id="email-input-error"></span>
+            <input
+              type="text"
+              id="phone-input"
+              placeholder="Телефон"
+              class="form__text"
+              name="email"
+              required
+              minlength="2"
+              maxlength="200"
+            />
+            <span class="form__error" id="phone-input-error"></span>
+            <textarea
+              type="text"
+              id="poetry-input"
+              placeholder="Стихи"
+              class="form__text"
+              name="poetry"
+              required
+              minlength="10"
+              rows="9"
+            >
+Стихи</textarea
+            >
+            <span class="form__error" id="poetry-input-error"></span>
+            <label for="radio-input" class="form__radio-text"
+              ><i class="form__radio-img"></i>
+              Согласен с
+              <a class="form__radio-link" href="#">офертой</a>
+              <input
+                type="radio"
+                id="radio-input"
+                name="radio"
+                value="radio"
+                class="form__radio"
+              />
+            </label>
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
       <footer class="footer">
         <p class="footer__copyright">Copyright</p>
         <p class="footer__copyright">Copyright</p>
