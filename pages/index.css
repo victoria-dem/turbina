@@ -7,7 +7,12 @@
 @import url("../blocks/header/__list-item/header__list-item.css");
 @import url("../blocks/header/__list-link/header__list-link.css");
 
-
+.header__place {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .main-illustration {
     margin: 0 auto;
     display: block;
@@ -142,4 +147,70 @@
     font-size: 18px;
     line-height: 1.21;
     padding: 35px;
+}
+
+
+/*Player*/
+
+audio::-webkit-media-controls-play-button{
+    background-color:green;}
+
+audio::-webkit-media-controls-panel {
+    top: 20px;
+    background-color:green;
+}
+.player__block {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+.player__about-song {
+    flex-basis: 80%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player__title {
+    flex-basis: 80%;
+}
+
+.player__range {
+    width: 80vw;
+}
+.player__button {
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.player__button-size {
+    border: 1px white solid;
+    border-radius: 200px;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+}
+
+.player__button-size:checked {
+    content: url('../images/play.png');
+}
+
+
+.player__lyrics {
+    border-radius: 200px;
+    border: 1px white solid;
+}
+
+.player__play-button {
+    background-image: url('../images/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.audio-player {
+    margin-bottom: 15px;
 }

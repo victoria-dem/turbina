@@ -1,181 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Турбина</title>
-    <link rel="stylesheet" href="./pages/index.css" />
-  </head>
-  <body class="page">
-    <header class="header">
-      <a href="#" class="logo"
-        ><img src="./images/logo.svg" alt="Проект Турбина"
-      /></a>
-      <nav>
+    <link rel="stylesheet" href="./pages/index.css"/>
+</head>
+<body class="page">
+<header class="header">
+    <div class="header__place">
+    <a href="#" class="logo"
+    ><img src="./images/logo.svg" alt="Проект Турбина"
+    /></a>
+    <nav>
         <ul class="header__list">
-          <li class="header__list-item">
-            <a class="header__list-link" href="#" target="_blank" rel="noopener"
-              >Яндекс.Музыка &#8599;</a
-            >
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link" href="#" target="_blank" rel="noopener"
-              >Spotify &#8599;</a
-            >
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link" href="#" target="_blank" rel="noopener"
-              >Apple Music &#8599;</a
-            >
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link" href="#" target="_blank" rel="noopener"
-              >VK Music &#8599;</a
-            >
-          </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="#" target="_blank" rel="noopener"
+                >Яндекс.Музыка &#8599;</a
+                >
+            </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="#" target="_blank" rel="noopener"
+                >Spotify &#8599;</a
+                >
+            </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="#" target="_blank" rel="noopener"
+                >Apple Music &#8599;</a
+                >
+            </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="#" target="_blank" rel="noopener"
+                >VK Music &#8599;</a
+                >
+            </li>
         </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <h1>
+    </nav>
+    </div>
+    <h1>
         <img
-          class="main-illustration"
-          src="./images/turbina.svg"
-          alt="Турбина"
+                class="main-illustration"
+                src="./images/turbina.svg"
+                alt="Турбина"
         />
-      </h1>
-      <section class="audio-player">
-        <audio>
-          <source src="./utils/dreaming.mp3" type="audio/mpeg" />
-          Ваш браузер не поддерживает HTML5 аудио.
-        </audio>
-      </section>
-      <div class="main-content">
+    </h1>
+    <section class="audio-player">
+        <div class="player">
+            <div class="player__block">
+                <button class="player__play-button player__button">
+                </button>
+                <div class="player__container">
+                    <div class="player__about-song">
+                        <div class="player__title">Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</div>
+                        <div class="player__timer">0:24</div>
+                    </div>
+                    <input type="range" class="player__range"/>
+                </div>
+                <button class="player__lyrics player__button">Текст песни</button>
+                <input type="checkbox" class="player__button-size player__button"></input>
+                <div class="lyrics"></div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="main">
+    <div class="main-content">
         <article class="content">
-          <h2 class="title">О проекте</h2>
-          <p class="content__text">
-            Мы знаем, что наши дети постоянно существуют в режиме
-            непрекращающегося творческого процесса. Мы видим это, когда ребёнок
-            что-то напевает, когда он бесконечно рисует, когда придумывает
-            истории, когда разговаривает с едой и игрушками — дети постоянно
-            включены и что-то изобретают. Родители часто недооценивают это
-            спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к
-            этому. Давайте попробуем внимательнее присмотреться к нашим детям.
-          </p>
-          <p class="content__text">
-            Мы запускаем проект «ТУРБИНА», который открывает работу настоящего
-            музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие
-            современные инди-музыканты пишут свои песни на стихи, написанные
-            детьми. Здесь важно — мы не заставляем наших детей садиться и писать
-            поэзию, мы говорим о том, что родителям стоит быть более
-            внимательными и чуткими к своим детям. Именно так мы сможем получить
-            тексты, которые перестанут быть детскими, не будут осмыслены как
-            взрослые — поэзия, которая сокращает дистанцию между взрослостью и
-            детством, где спонтанное детское творчество и бессознательное,
-            замеченное родителем, становится общественным культурным достоянием.
-          </p>
+            <h2 class="title">О проекте</h2>
+            <p class="content__text">
+                Мы знаем, что наши дети постоянно существуют в режиме
+                непрекращающегося творческого процесса. Мы видим это, когда ребёнок
+                что-то напевает, когда он бесконечно рисует, когда придумывает
+                истории, когда разговаривает с едой и игрушками — дети постоянно
+                включены и что-то изобретают. Родители часто недооценивают это
+                спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к
+                этому. Давайте попробуем внимательнее присмотреться к нашим детям.
+            </p>
+            <p class="content__text">
+                Мы запускаем проект «ТУРБИНА», который открывает работу настоящего
+                музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие
+                современные инди-музыканты пишут свои песни на стихи, написанные
+                детьми. Здесь важно — мы не заставляем наших детей садиться и писать
+                поэзию, мы говорим о том, что родителям стоит быть более
+                внимательными и чуткими к своим детям. Именно так мы сможем получить
+                тексты, которые перестанут быть детскими, не будут осмыслены как
+                взрослые — поэзия, которая сокращает дистанцию между взрослостью и
+                детством, где спонтанное детское творчество и бессознательное,
+                замеченное родителем, становится общественным культурным достоянием.
+            </p>
         </article>
         <article class="content">
-          <h2 class="title">Как это работает</h2>
-          <p class="content__text">
-            Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы
-            записали и считаете, что это сильное высказывание. Мы собираем пул
-            таких текстов и передаём их музыкантам. Артисты создают музыку на
-            эти стихи. Мы продюсируем выпуск трека, возможно съёмки клипа и так
-            далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн
-            Дадн feat. Варя Карпова и Федя Быстров — Контур.
-          </p>
+            <h2 class="title">Как это работает</h2>
+            <p class="content__text">
+                Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы
+                записали и считаете, что это сильное высказывание. Мы собираем пул
+                таких текстов и передаём их музыкантам. Артисты создают музыку на
+                эти стихи. Мы продюсируем выпуск трека, возможно съёмки клипа и так
+                далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн
+                Дадн feat. Варя Карпова и Федя Быстров — Контур.
+            </p>
         </article>
         <article class="content">
-          <h2 class="title">Тезисы</h2>
-          <ul class="content__text_list">
-            <li class="content__text_list-item">
-              Дети никогда не прекращают творить и круто стараться быть на них
-              похожими в этом
-            </li>
-            <li class="content__text_list-item">
-              Детское бессознательное помогает родителям понять, что происходит
-              внутри семьи
-            </li>
-            <li class="content__text_list-item">
-              Не существует детской и взрослой поэзии. Существует мысль и
-              чувство, зафиксированное в ней
-            </li>
-            <li class="content__text_list-item">
-              Дети получают невероятное удовольствие и мотивацию от того, что их
-              творчество востребовано сверстниками и взрослыми.
-            </li>
-          </ul>
+            <h2 class="title">Тезисы</h2>
+            <ul class="content__text_list">
+                <li class="content__text_list-item">
+                    Дети никогда не прекращают творить и круто стараться быть на них
+                    похожими в этом
+                </li>
+                <li class="content__text_list-item">
+                    Детское бессознательное помогает родителям понять, что происходит
+                    внутри семьи
+                </li>
+                <li class="content__text_list-item">
+                    Не существует детской и взрослой поэзии. Существует мысль и
+                    чувство, зафиксированное в ней
+                </li>
+                <li class="content__text_list-item">
+                    Дети получают невероятное удовольствие и мотивацию от того, что их
+                    творчество востребовано сверстниками и взрослыми.
+                </li>
+            </ul>
         </article>
         <section class="poetry-form">
-          <h2 class="title">Форма</h2>
-          <form class="form" name="poetry" novalidate>
-            <input
-              type="text"
-              id="name-input"
-              placeholder="Имя и фамилия автора"
-              class="form__text"
-              name="title"
-              required
-              minlength="2"
-              maxlength="40"
-            />
-            <span class="form__error" id="name-input-error"></span>
-            <input
-              type="text"
-              id="email-input"
-              placeholder="Почта"
-              class="form__text"
-              name="email"
-              required
-              minlength="2"
-              maxlength="200"
-            />
-            <span class="form__error" id="email-input-error"></span>
-            <input
-              type="text"
-              id="phone-input"
-              placeholder="Телефон"
-              class="form__text"
-              name="email"
-              required
-              minlength="2"
-              maxlength="200"
-            />
-            <span class="form__error" id="phone-input-error"></span>
-            <textarea
-              type="text"
-              id="poetry-input"
-              placeholder="Стихи"
-              class="form__text"
-              name="poetry"
-              required
-              minlength="10"
-              rows="9"
-            >
+            <h2 class="title">Форма</h2>
+            <form class="form" name="poetry" novalidate>
+                <input
+                        type="text"
+                        id="name-input"
+                        placeholder="Имя и фамилия автора"
+                        class="form__text"
+                        name="title"
+                        required
+                        minlength="2"
+                        maxlength="40"
+                />
+                <span class="form__error" id="name-input-error"></span>
+                <input
+                        type="text"
+                        id="email-input"
+                        placeholder="Почта"
+                        class="form__text"
+                        name="email"
+                        required
+                        minlength="2"
+                        maxlength="200"
+                />
+                <span class="form__error" id="email-input-error"></span>
+                <input
+                        type="text"
+                        id="phone-input"
+                        placeholder="Телефон"
+                        class="form__text"
+                        name="email"
+                        required
+                        minlength="2"
+                        maxlength="200"
+                />
+                <span class="form__error" id="phone-input-error"></span>
+                <textarea
+                        type="text"
+                        id="poetry-input"
+                        placeholder="Стихи"
+                        class="form__text"
+                        name="poetry"
+                        required
+                        minlength="10"
+                        rows="9"
+                >
 Стихи</textarea
-            >
-            <span class="form__error" id="poetry-input-error"></span>
-            <label for="radio-input" class="form__radio-text"
-              ><i class="form__radio-img"></i>
-              Согласен с
-              <a class="form__radio-link" href="#">офертой</a>
-              <input
-                type="radio"
-                id="radio-input"
-                name="radio"
-                value="radio"
-                class="form__radio"
-              />
-            </label>
-            <button class="form__button" type="submit">Отправить</button>
-          </form>
+                >
+                <span class="form__error" id="poetry-input-error"></span>
+                <label for="radio-input" class="form__radio-text"
+                ><i class="form__radio-img"></i>
+                    Согласен с
+                    <a class="form__radio-link" href="#">офертой</a>
+                    <input
+                            type="radio"
+                            id="radio-input"
+                            name="radio"
+                            value="radio"
+                            class="form__radio"
+                    />
+                </label>
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
         </section>
-      </div>
-      <footer class="footer">
+    </div>
+    <footer class="footer">
         <p class="footer__copyright">Copyright</p>
         <p class="footer__copyright">Copyright</p>
-      </footer>
-    </main>
-  </body>
+    </footer>
+</main>
+<script src='./pages/index.js' type="audio/mpeg"></script>
+</body>
 </html>
